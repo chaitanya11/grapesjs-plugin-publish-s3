@@ -26,7 +26,7 @@ export default grapesjs.plugins.add('gjs-plugin-publish-s3', (editor, opts = {})
 
     icon: 'fa fa-paper-plane',
 
-    preHtml: '<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="./css/style.css"></head><body>',
+    preHtml: '<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="./style.css"></head><body>',
     postHtml: '</body><html>',
     preCss: '',
     postCss: ''
