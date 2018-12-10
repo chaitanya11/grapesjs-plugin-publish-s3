@@ -1,32 +1,23 @@
-# [GrapesJS Filestack](http://grapesjs.com/demo.html)
+# [GrapesJS Plublish S3]
 
-This plugin replaces the default file uploader with the one from Filestack
-
-Demo: http://grapesjs.com/demo.html
-
-<p align="center"><img src="http://grapesjs.com/img/screen-fs.jpg" alt="GrapesJS" width="500" align="center"/></p>
-<br/>
+This enables you to publish rendered html from grapesJs to S3.
 
 
 
 ## Summary
 
 * Plugin
-  * Name: `gjs-plugin-filestack`
+  * Name: `grapesjs-plugin-publish-s3`
   * Options:
-      * `key` Filestack's API key (**required**)
-      * `btnEl` Custom button element which triggers Filestack modal
-      * `btnText` Text for the button in case the custom one is not provided, default: `Add images`
-      * `filestackOpts` Filestack's options, default: `{accept: 'image/*', maxFiles: 10}`
-      * `onComplete` On complete upload callback, eg. `onComplete: (blobs, assets) => {...}`
-        *blobs* Array of Objects, eg. [{url:'...', filename: 'name.jpeg', ...}]
-        *assets* Array of inserted assets
+      * accessKeyId: `<AWS Access key Id>`,
+      * secretAccessKey: `<Aws secret access key>`,
+      * sessionToken: `<AWS Sessions Token>`
 
 
 
 ## Download
 
-* `npm i grapesjs-plugin-filestack`
+* `npm i grapesjs-plugin-publish-s3`
 
 
 
@@ -34,10 +25,10 @@ Demo: http://grapesjs.com/demo.html
 
 ```html
 <link href="path/to/grapes.min.css" rel="stylesheet"/>
-<link href="path/to/grapesjs-plugin-filestack.css" rel="stylesheet"/>
+<link href="path/to/grapesjs-plugin-publish-s3.css" rel="stylesheet"/>
 
 <script src="path/to/grapes.min.js"></script>
-<script src="path/to/grapesjs-plugin-filestack.min.js"></script>
+<script src="path/to/grapesjs-plugin-publish-s3.min.js"></script>
 
 <div id="gjs"></div>
 
