@@ -1,4 +1,4 @@
-# [GrapesJS Plublish S3]
+# GrapesJS Plublish S3
 
 This enables you to publish rendered html from grapesJs to S3.
 
