@@ -12,6 +12,8 @@ This enables you to publish rendered html from grapesJs to S3.
       * accessKeyId: `<AWS Access key Id>`,
       * secretAccessKey: `<Aws secret access key>`,
       * sessionToken: `<AWS Sessions Token>`
+      * bucketName: `<S3 Bucket Name>` (Default bodylesscms)
+      * prefix: `<Folder Name>` (Default Empty)
 
 
 
@@ -37,7 +39,13 @@ This enables you to publish rendered html from grapesJs to S3.
       container : '#gjs',
       plugins: ['gjs-plugin-publish-s3'],
       pluginsOpts: {
-        'gjs-plugin-publish-s3': {/* ...options */}
+        'gjs-plugin-publish-s3': {
+           accessKeyId: '<AWS Access key Id>',
+           secretAccessKey: '<Aws secret access key>',
+           sessionToken: '<AWS Sessions Token>',
+           bucketName: '<AWS S3 Bucket Name>',
+           prefix: '<Folder Name in s3 bucket.>'
+        }
       }
   });
 </script>
